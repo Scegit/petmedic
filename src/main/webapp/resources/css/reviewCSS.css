@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.yellowbtn {
+	border: none;
+	background-color: #fbbc04;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.reviewPadding {
+	padding: 10px;
+}
+
+.revshadow {
+	border: none;
+	box-shadow: 0 .1rem 2rem rgba(0,0,0,.08) !important;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+.revaround {
+	border: none; 
+	border-radius : 10px;
+
+}
+.revInsBtn {
+	border: none; 
+	border-radius : 10px;
+	background-color:#fbbc04;
+}
+
+

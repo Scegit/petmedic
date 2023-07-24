@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+/* .container-fluid.hoslist{ 공유컨테이너 병원목록들여백 설정 */
+/* 	padding: 0 300px 0 300px;  */
+/* } */
+
+/* 병원정보 들어올 container */
+#hosadd {
+	max-width:607px;
+	margin-top:30px;
+/* 	border:1px solid red; */
+}
+
+/* 각 항목들 */
+/* div.hosmb { */
+/*     border: 1px solid #878ECD; */
+/* } */
+
+div.hosformrow div.col{ 
+    max-width: max-content;
+    padding: 0px;
+    display: flex;
+}
+div.hosformrow span.input-group-text{
+	width:150px;
+}
+div.hosformrow div.col:last-child{
+	max-width:100%;
+}
+div.hosformrow div#hos_lunchbreak {
+/* 	max-width:max-content; */
+}
+
+select.custom-select.stime {
+/*     max-width: fit-content; */
+/*     padding-right: 75px; */
+}
+
+div.hos_holdate {
+	flex-wrap:wrap;
+	align-items: center;
+	border: 1px solid;
+	border-radius: 3px;
+}
+div.col.hos_aniAnimal{
+	flex-wrap:wrap;
+	align-items: center;
+	border: 1px solid default;
+	border-radius: 3px;
+	
+}
+div.hosformrow .custom-control {
+	padding-left: 3rem;
+}
+
+div.hos_adcol {
+	flex-direction:column;
+}
+div.hos_adcol .form-control {
+    display: inline-block;
+    width: auto;
+}
+div.hos_adcol .hos_zipcode,
+div.hos_adcol .hos_findZipcode,
+div.hos_adcol .hos_doroName,
+div.hos_adcol .hos_jibunName,
+div.hos_adcol .hos_sangseName,
+div.hos_adcol .hos_chamgo {
+	width:228px;
+}
+
+div.hos_adcol input.hos_findZipcode {
+  background: #Fbbc04;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  
+}
+div.hos_adcol input.hos_findZipcode:hover{
+	background:  #5D3891;
+     transform: scale(1.03); /* Increase the size by 10% */    
+   background-color: #674ea7;
+    
+}
+div.hos_adcol input.hos_findZipcode:active{
+	background:  #5D3891;
+    transform: scale(0.9); /* Decrease the size by 10% */
+    background-color: #674ea7;
+    
+}
+
+/* 병원정보등록 타이틀 */
+h3.hname{
+ color: white;
+ background: #5D3891;
+ text-align: center;
+ width: 100%; 
+ height: 80px;
+ font-size: 30px;
+ padding: 15px  0 5px 0; 
+ margin-bottom: 0px;
+ border-top-left-radius: 30px;
+ border-top-right-radius: 30px; 
+}
+h3.hend{ 
+ background: #5D3891;
+ text-align: center;
+ width: 100%;
+ height: 80px;
+ margin-bottom: 0;
+ border-bottom-left-radius: 30px;
+ border-bottom-right-radius: 30px;
+} 
+
+
+div.input-group-prepend{ 
+/*     justify-content: center;  */
+}
+.input-group-text{
+  color: white;
+  background: #B9BBDF; 
+	
+}
+
+/* 주소 확인 */
+/* .hos_zipcode { width:40%;} */
+
+
+.address{	
+/* 	background: #DDE7F2;  주소창 배경색 */
+/* 	margin-bottom: 0px; */
+/* 	border: 1px solid #878ECD;  */
+/* 	border-radius:  0 10px 10px 0; */
+}
+
+.address input{	/*input태그 글자중앙정렬*/
+/* 	text-align: center; */
+}
+
+.input-group-prepend {
+/*     text-align: left!important;  */
+}
+
+input.form-control.innm{
+/* 	 background: #DDE7F2; */
+/* 	 margin: 0; */
+}
+span.input-group-text{
+ 	justify-content: center;	 
+}
+
+label input[type="checkbox"]{
+/* 	background-color:#DDE7F2; */
+/* 	border: 1px solid #878ECD;  */
+/* 	border-radius:  0 10px 10px 0; */
+/*     display:none; */
+/*     display: inline-block; */
+/*     width: 16px; */
+/*     height: 16px; */
+/*     margin: -2px 10px 0 0; */
+/*     vertical-align: middle; */
+/*     background: url(checkbox.svg) left top no-repeat; */
+/*     cursor: pointer; */
+/*     background-size: cover; */
+    
+}
+
+/* 등록버튼 */
+#addhospital{
+  background: #Fbbc04;
+  border: none;
+   color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#addhospital:hover{
+   transform: scale(1.03); /* Increase the size by 10% */    
+   background-color: #674ea7;
+}
+#addhospital:active{
+  transform: scale(0.9); /* Decrease the size by 10% */
+  background-color: #674ea7;
+ 
+}
+.container-fluid.hoslist{
+   padding:0 250px 0 250px;
+    
+} 

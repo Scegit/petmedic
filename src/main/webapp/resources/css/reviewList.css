@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+  .revShadow {
+        border-radius: 10px;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+        cursor: pointer;
+      }
+
+      .revShadow:hover {
+        transform: translateY(-5px);
+      }
+
+      .revShadow:active {
+        transform: translateY(5px);
+      }
+
+    .profilepic {
+	    border-radius: 10px;
+	    width: 134px;
+	    height: 145px;
+	    margin: 17px 10px 0px 10px;
+	}
+
+      .main {
+        height: 120px;
+        text-align: center;
+        background-color: #674ea7;
+      }
+
+      .title {
+        font-size: larger;
+        margin-top: 30px;
+        color: #674ea7;
+        padding: 0;
+      }
+
+      .menu {
+        border: none;
+        border-radius: 50%;
+        background-color: #fbbc04;
+        color: white;
+        margin: 30 10;
+        height: 70;
+        width: 70;
+      }
+
+      .maintitle {
+        color: white;
+        margin-top: 30px;
+        font-size: xx-large;
+      }
+
+      .leftp {
+        padding: 0 0 0 30;
+      }
+
+      .user-info {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .user-info span {
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .rating {
+        font-size: 24px;
+        color: #fbbc04;
+      }
+
+      .review-details {
+        align-items: center;
+        padding: 0px 10px 10px 22px;
+        font-size: 16px;
+        color: #666;
+      }
+      .review-details-up {
+        align-items: center;
+        padding: 0px 10px 0px 22px;
+        font-size: 16px;
+        color: #666;
+      }
+
+      .review-title {
+        justify-content: left;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+        color: #674ea7;
+      }
+
+      .review {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px; /* Adjust this value based on your design */
+      }
+
+
+      .search-container-rev {
+      	text-align: right;
+        margin-bottom: 20px;
+      }
+
+      .search-input-rev {
+        flex: 1;
+        height: 30px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      
+      .srchMain {
+      	border:none;
+      	
+      }
+
+      .search-button {
+        background-color: #fbbc04;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-left: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      .search-button:hover {
+        transform: scale(1.03); /* Increase the size by 10% */
+        background-color: #674ea7;
+      }
+
+      .search-button:active {
+        transform: scale(0.9); /* Decrease the size by 10% */
+        background-color: #674ea7;
+      }
+      .search-button-delete {
+        background-color: #fbbc04;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-left: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      .search-button-delete:hover {
+        transform: scale(1.03); /* Increase the size by 10% */
+        background-color: #FF6847;
+      }
+
+      .search-button-delete:active {
+        transform: scale(0.9); /* Decrease the size by 10% */
+        background-color: #FF6847;
+      }
+
+      .search-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+    justify-content: right;
+}
+      .review-box {
+        margin-bottom: 20px;
+      }
+
+      /* Media query for mobile devices */
+      @media only screen and (max-width: 600px) {
+        .review-box {
+          margin-bottom: 10px;
+        }
+      }
+
+      /* Media query for mobile devices */
+      @media only screen and (max-width: 600px) {
+        .search-container {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .search-input {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        .search-button {
+          margin-left: 0;
+        }
+
+        .search-box {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .search-select {
+          margin-bottom: 10px;
+        }
+      }
+
+       #searchCondition_rv {
+		   height: 30px;
+		   padding: 5px;
+		   border: none;
+		   border-radius: 5px;
+		   font-size: 14px;
+		   margin-right: 5px;
+		}
+
+      #reviewContainer {
+        filter: blur(5px);
+        pointer-events: none;
+      }
+      
+      .profileupper {
+      	margin-left: 15px;
+      }
+      
+      .revDetailMargin {
+      	margin-top: 50px;
+      }
+      
+      .textareaWidth {
+      	width: 100%;
+      }
+     

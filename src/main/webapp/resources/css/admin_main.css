@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* 230521 소미 수정 */
+.rightCol{
+	text-align: right;
+}
+
+/* 230521 소미 수정 */
+.rightCol>a{
+	text-align: right;
+	color: black;
+}
+
+.adminMainContainer {
+	width: 768px;
+	margin: 0 auto;
+}
+
+.pet_reserve_chart, .hospital_chart {
+	text-align: center;
+	height: 400px;
+	width: 100%;
+	margin: 50px auto;
+}
+
+#pet_reserve_chart_title, #hospital_chart_title {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#pet_reserve_chart_title {
+	margin-left: 27px;
+}
+
+#hospital_chart_title {
+	margin-left: 22px;
+}
+
+.hospital_chart {
+	margin-top: 100px !important;
+}
+
+.recentIssue {
+	width: 100%;
+}
+
+.recentIssue .recentIssueH2 {
+	border-left: 5px solid #674ea7;
+	padding-left: 20px;
+	margin: 60px auto;
+	margin-left: -15px;
+}
+
+.recentJoinHospital, .recentReserVeHospital {
+	margin-bottom: 50px;
+}
+
+.recentJoinHospitalH2, .recentReserVeHospitalH2 {
+	margin-bottom: 20px;
+}
+
+.recentHosRow {
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+}
+
+.recentHosTitle {
+	background-color: #674ea7 !important;
+	color: #fff;
+	text-align: center;
+	border-radius: 8px 8px 0px 0px;
+}

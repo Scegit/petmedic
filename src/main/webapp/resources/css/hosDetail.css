@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+
+/* 768px 보다 큰 장치 크기에 대한 스타일 조정 */
+@media (min-width: 769px) {
+/*병원 대표이미지*/
+#hosDetailDiv{
+text-align:center;
+margin-top: 30px;
+}
+
+div.midBar{
+height:100%;
+display: flex;
+flex-direction: column;
+}
+
+
+/*병원이름*/
+div.hosNameTitle{
+margin: 5px 0 0 0;
+}
+
+
+div.hosNameTitle >p{
+margin:0;
+font-size: 18pt;
+position: relative;
+top: 3px;
+padding-left: 23%;
+}
+/*병원 이미지*/	
+#hosDetailDiv img#hosIMG{
+width: 100%;
+height:100%;
+}
+
+/*병원 위치, 등등 + 예약버튼 디브*/
+#hosDetailTableDiv{
+height:100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+#hosDetailTableDiv button{
+display:block;
+background-color: #5D3891;
+color: white;
+padding: 15px;
+font-size: 13pt;
+}
+
+#hosDetailTableDiv button:hover{
+background-color:#F99417;
+}
+
+
+#hosDetailTableDiv table{
+font-size: 0.9em;
+height: 50%;
+margin: auto 0;
+margin-bottom: 15px;
+}
+
+
+#hosDetailTableDiv table th{
+background-color:#DDE7F2;
+padding: 3px 25px;
+}
+
+#hosDetailTableDiv table th:first-child{
+border-bottom: 1px solid #fff;
+}
+
+#hosDetailTableDiv table th:last-child{
+border-top: 1px solid #fff;
+}
+
+#hosDetailTableDiv table td{
+border:1px solid #DDE7F2;
+padding: 10px 10px;
+}
+
+
+/*병원정보 삼총사*/
+div.ajaxBar{
+text-align:center;
+padding:0;
+}
+
+/*찾아오시는길*/
+#hosDetailCome{
+margin-top:50px;
+}
+
+#hosDetailCome p{
+margin:0;
+font-size: 18pt;
+font-weight: bold;
+padding-top:10px;
+}
+
+#hosDetailCome >#map{
+margin-top:20px;
+}
+
+#hosDetailDiv .hosNameTitle svg{
+position: absolute;
+top: 3px;
+}
+
+#hosDetailCome p.hosComContent{
+font-weight: 400;
+font-size: 1.0em;
+margin: 60px 0;
+text-align: right;
+padding: 20px;
+}
+
+/*오시는길 아이콘*/
+#hosDetailCome svg{
+position: relative;
+left: -80px;
+top: 38px;
+}
+
+}
+
+
+
+
+/*작은거===========================*/
+@media (max-width: 768px){
+#hosDetailDiv{
+text-align:center;
+margin-top: 30px;
+}	
+
+#hosDetailDiv img#hosIMG{
+width: 100%;
+height:100%;
+}
+
+div.hosNameTitle >p{
+margin:0;
+font-size: 18pt;
+position: relative;
+top: 3px;
+padding-left: 34%;
+}
+
+div.midBar >div:first-child{
+margin-top:15px;
+}
+
+#hosDetailTableDiv{
+height:100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin-top:25px;
+}
+
+#hosDetailTableDiv button{
+display: block;
+background-color: #5D3891;
+color: white;
+font-size: 15pt;
+padding: 15px;
+border-radius: 19px;
+}
+
+#hosDetailTableDiv button:hover{
+background-color:#F99417;
+}
+
+
+#hosDetailTableDiv table{
+font-size: 0.9em;
+height: 50%;
+margin-bottom: 20px;
+}
+
+
+#hosDetailTableDiv table th{
+background-color:#DDE7F2;
+padding: 15px 25px;
+}
+
+#hosDetailTableDiv table th:first-child{
+border-bottom: 1px solid #fff;
+}
+
+#hosDetailTableDiv table th:last-child{
+border-top: 1px solid #fff;
+}
+
+#hosDetailTableDiv table td{
+border:1px solid #DDE7F2;
+}
+
+#hosDetailCome p{
+margin: 0;
+font-size: 18pt;
+font-weight: bold;
+padding: 10px;
+margin-top: 30px;
+}
+
+#hosDetailCome p.hosComContent{
+font-weight:400;
+font-size:0.9em;
+margin:10px 0;
+}
+
+/*별모양 찜*/
+#hosDetailDiv .hosNameTitle svg{
+position: absolute;
+top: 6px;
+}
+
+/*오시는길 아이콘*/
+#hosDetailCome svg{
+position: relative;
+left: -80px;
+top: 70px;
+}
+}
+

@@ -1,0 +1,597 @@
+@charset "UTF-8";
+
+/* 스마트폰 세로 */    
+/* └> 기본사이즈로 들어감 */
+
+/* 모달메뉴 */
+.modalRede { margin-top: 180px; }
+div.modelResvHeader { border-bottom:none;}
+div.modelResvFooter { border-top:none; justify-content: center;}
+h3#resvDeModalLabel { padding-top:15px; padding-left:5px; }
+table.myResvDetail {
+    width: 100%;
+    color:black;
+}
+
+div#resvDeModal .modal-content {
+   border-radius: 0.7rem;
+}
+
+table.myResvDetail th {
+    text-align: left;
+    width: 40%;
+    padding-left: 15px;
+    display: grid;
+    align-content: center;
+}
+
+table.myResvDetail tr {
+    padding: 15px 15px;
+    display: flex;
+    margin-bottom: 15px;
+    border: 1px solid rgba(103,78,167, 0.3);
+    border-radius: 8px;
+    box-shadow: 1px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+table.myResvDetail button { color:white; }
+.modalRede button#modalCloseD {
+    background-color: #Fbbc04;
+    color: white;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+.modalRede button#modalCloseD:hover,
+.modalRede button#modalCloseD:focus,
+.modalRede button#modalCloseD:active {
+   background-color:#674ea7;
+   font-weight:bold;
+}
+
+/* 찜목록, 예약내역 제목 row */
+div.actiontitle {   
+   padding-top:30px;
+   padding-bottom:10px;
+   margin-right: 0px;
+    margin-left: 0px;
+}
+div.actiontitleReserve { 
+   display: flex; 
+   flex-direction:row;
+}
+
+/* 찜 더보기버튼 (>) */
+div.actiontitle a { color:black; }
+div.actiontitle a:hover { cursor:pointer; text-decoration:none; font-weight:bold; }
+div.actiontitle span:hover { text-decoration:none; font-weight:bold; }
+div.showMoreRevZzim { justify-content: end; display: inline-flex; }
+
+/* 찜컨텐츠 1줄데이터 css */
+div.myZzimRow {
+   padding-left:0px; 
+   padding-right:0px;
+   display: flex; 
+   flex-wrap: wrap; 
+   align-content: center; 
+   justify-content: center;
+   text-align: center;
+}
+
+/* 예약내역 목록 */
+/* 테이블: .reserveMy */
+table.reserveMy, div.reviewtable { text-align:center; }
+table.reserveMy th, div.reviewtable th { 
+   padding-top:10px;
+   padding-bottom:10px;
+}
+table.reserveMy td, div.reviewtable td { 
+   padding:10px 0;
+}
+
+/* 마이액션찜.jsp *//* 마이액션예약.jsp */
+/* 찜, 예약 타이틀 및 한 줄 설명*/
+div.myactionReserve > div.zzimtitlerow,
+div.myactionZzim > div.zzimtitlerow {
+   flex-direction:column;
+   display:flex;
+   justify-content:center;
+   padding-top: 25px;
+   padding-bottom:25px;
+}
+div.myactionZzim div.blurblur {
+/*    box-shadow: none; */
+}
+div.myactionReserve > div.zzimtitlerow > div.col,
+div.myactionZzim > div.zzimtitlerow > div.col {
+   display:flex;
+   justify-content:center;
+   padding:5px 0px;
+}
+div.myactionReserve > div.zzimtitlerow > div.col > strong,
+div.myactionZzim > div.zzimtitlerow > div.col > strong {
+   font-size:1.2rem;
+}
+div.myactionReserve > div.zzimtitlerow > div.col > span,
+div.myactionZzim > div.zzimtitlerow > div.col > span {
+   color:#999;
+}
+
+span#marFirst > a { padding:10px 15px; background-color:#Fbbc04; color:white; border-radius: 8px;}
+span#marFirst > a:hover,
+span#marFirst > a:focus,
+span#marFirst > a:active {
+   cursor:pointer;
+   font-weight:bold;
+   background-color:#674ea7;
+}
+
+/* 예약내역 기간검색창 */
+div.search-box-reserve {
+   flex-direction:column;
+   justify-content:end;
+   display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+}
+
+div.myResvSrch input { border:none; width:300px;}
+div.myResvSrch input { text-align:center;}
+div.myResvSrch input:active,
+div.myResvSrch input:focus,
+div.myResvSrch input:hover {
+   outline:none !important;
+   box-shadow:none !important;
+   border:1px solid #Fbbc04 !important;
+}
+
+#myResvDateSearchResetButton,
+#myResvDateSearchButton { 
+   margin-right:10px;
+   background-color:#Fbbc04;
+   color:white;
+   padding: 6px 12px;
+   border-radius:8px;   
+}
+
+#myResvDateSearchResetButton:hover,
+#myResvDateSearchButton:hover, 
+#myResvDateSearchButton:active, 
+#myResvDateSearchResetButton:active, 
+#myResvDateSearchButton:focus 
+#myResvDateSearchResetButton:focus {
+   color:white;
+   font-weight:bold;
+   background-color:#674ea7;
+   box-shadow:none !important;
+}
+
+/* .search-box-reserve > .col-3, */
+.search-box-reserve > .col-4 {
+    justify-content: center;
+   display: flex;
+}
+/* .search-box-reserve > .col-4:first-child { */
+/*    justify-content: start; */
+/* } */
+.search-box-reserve > .col {
+   display:flex;
+   flex-direction:row;
+   justify-content: center;
+}
+    
+/* 찜 들어오는 곳 */
+div#actZzimList {
+   padding:25px 0px;
+   margin-bottom:10px;
+   transition: transform 0.2s ease;
+   width:auto;
+   margin: 15px auto;
+}
+div#actZzimList:hover {
+  transform: translateY(-5px);
+}
+div#actZzimList > div.col-8{
+   align-items: center;
+   justify-content:center;
+   display: inline-flex;
+}
+div#actZzimList button {
+   color:white;
+}
+div#actZzimList > div.col-8,
+div#actZzimList > div.col-8 a {
+	padding-right:0px;
+}
+div#actZzimList > div.col-8:hover{
+   font-weight:bold;
+   cursor:pointer;
+}
+div#actZzimList > div.col-4{
+   justify-content:end;
+   padding-left:0px;
+}
+div#actZzimList > div.col-4 > button{
+   border:none;
+   background-color:#Fbbc04;
+}
+div#actZzimList > div.col-4 > button:hover,
+div#actZzimList > div.col-4 > button:active,
+div#actZzimList > div.col-4 > button:focus {
+   border:none !important;
+   outline:none !important;
+   background-color:#674ea7;
+   color:white;
+   font-weight:bold;
+}
+div.emptyResult { margin-top:50px;}
+
+/* 예약내역 들어오는 곳 */
+div#reserveTitle {
+   display:none;
+   padding-top:25px;
+   text-align:center;
+}
+
+div#reserveTitle > hr {
+   width: 95%;
+    margin-left: 1px;
+    background-color:#eee;
+}
+
+div.mobileActT {
+    padding-right: 0px;
+}
+div.mibileActC {
+/*    font-size:0.8rem; */
+    padding-right: 10px;
+    padding-left: 0px;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+div.mobileActCt {
+   padding-right: 0px;
+    padding-left: 0px;
+}
+div.mibileActC > button { color:white;}
+
+/* 예약내역 웹사이즈 숨겨져있거라 */
+div#actListweb {display:none;}
+div.webActC { display:none; }
+
+/* 예약내역이 없을 경우 나오는 div */
+div#emptyRes {
+    justify-content: center;
+    margin-top:80px;
+}
+div#actList { padding: 15px 0px; margin:10px 0px;}
+div#actList > div.col-sm { 
+   display:flex;
+   align-items:center;
+   justify-content:center;
+}
+span.canceledResv { padding:6px 0px;}
+ button.resCancel,  button.resvDetail,
+button.revInsButn, button.resbtn {
+    border: none;
+    background-color: #Fbbc04;
+    border-radius: 8px;
+    padding: 5px 10px;
+    color:white;
+}
+
+ button.resvDetail:hover,  button.resvDetail:active, button.resvDetail:focus,
+ button.revInsButn:hover,  button.resCancel:hover,
+ button.revInsButn:active,  button.resCancel:active,
+ button.revInsButn:focus,  button.resCancel:focus  { 
+    color:white;
+    background-color:#674ea7;
+    font-weight:bold;
+    outline:none !important;
+    border:none !important;
+    box-shadow:none !important;
+ }
+
+
+/* 마이액션예약.jsp */
+/* 더보기 페이징 */
+div#actListPageDiv {
+   padding-top: 20px;
+}
+div#actListPage {
+    justify-content: center;
+    display: flex;
+}
+div#actListPage > a {
+   color:white;
+   padding:10px 15px;
+   border-radius:8px;
+   background-color: #Fbbc04;
+}
+div#actListPage > a:hover {
+    background-color:#674ea7;
+    font-weight:bold;
+    text-decoration:none;
+ }
+
+
+
+/* 마이페이지 메인 */
+div.mobilecontr1 {
+   display:flex;
+   flex-direction:column;
+}
+div.actiontitlezzim,
+div.actiontitlereserv,
+div.actiontitlereview,
+div.actiontitlepetpet,
+div.actiontitlemyInfo {
+   display:inline-flex;
+}
+div.infolineheight {
+   line-height: 3.2;
+}   
+div.mobilecontr1 div.actiontitlezzim,
+div.mobilecontr1 div.actiontitlepetpet,
+div.mobilecontr1 div.actiontitlemyInfo,
+div.mobilecontr1 div.actiontitlereserv,
+div.mobilecontr1 div.actiontitlereview {
+   padding-left:0px;
+   padding-right:0px;
+}
+
+div.mobilecontr1 div.blurblur {
+   padding:20px 0px;;
+   padding-left:10px;
+   padding-right:0px;
+}
+
+div.mobilecontr1 div.myactionReservemain,
+div.mobilecontr1 div.reviewtable { 
+   padding-left:0px;
+}
+
+div.actiontitle > div.col:first-child {
+   font-size: 1.3rem;
+}
+div.actiontitle > div.col-9,
+div.actiontitle > div.col-3 {
+   font-size: 1.3rem;
+}
+div#pet_pic {
+    text-align: center;
+}
+
+/* 모바일사이즈 마이페이지 메뉴 */
+div.mobileMyMenu {display:block;}
+div#menuDiv { display:none; }
+
+/* 껍데기: 컨테이너 */
+div.mobileMyMenu { 
+   background-color:#674ea7; 
+   color:white;
+   padding: 25px 50px;
+    border-radius: 15px;
+}
+
+/* 타이틀(~님의 마이페이지) */
+div.mobileMytitle { 
+   flex-direction:column;
+   justify-content: center; 
+   padding-bottom:20px;
+}
+div.mobileMytitle > div.col {
+   display:flex; 
+   justify-content: center;
+}
+
+/* 마이페이지 메뉴 한 줄 */
+div.mobileMy_memu > div.col,
+div.mobileMy_memu > div.col { 
+   padding-left:0px;
+   padding-right:0px;
+   padding:10px 0px;
+   display:flex; 
+   justify-content:center;
+   align-items:center;
+   color:white;
+   font-weight:bold;
+}
+
+/* 마이페이지 메뉴버튼들 */
+div.mobileMy_wrap { 
+    display: grid;
+   align-content: center;
+   justify-content: center;
+    text-align: left;
+   width:80px;
+   height:80px; 
+   border-radius:50%;
+   background-color: #Fbbc04;
+}
+div.mobileMy_wrap:active,
+div.mobileMy_wrap:hover {
+   cursor:pointer;
+   background-color:white; 
+   color:#Fbbc04;
+}
+
+
+
+
+
+@media screen and (min-width:576px) {
+/* 스마트폰 가로 */
+div.mobileActT, div.mobileActCt { display:none; }
+div.webActC { display:flex; }
+}
+div.webActC > div.col {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+    flex-wrap: wrap;
+}
+
+table.reserveMy tr:first-child,
+div.reviewtable tr:first-child {
+   border-bottom:1px solid #ddd;
+}
+div.webConMy { max-width:768px; }
+
+
+@media screen and (min-width:768px) {
+/* 타블렛 */
+
+/* 모달메뉴 */
+.modalRede { margin-top: 100px; }
+table.myResvDetail th {
+    width: 30%;
+}
+
+
+
+/* 마이페이지 으아아아 */
+div.webConMy { max-width:768px; }
+
+div.mobilecontr1 {
+   display:flex;
+   flex-direction:row;
+}
+
+
+/* 예약내역 */
+div#reserveTitle {
+   display:flex;
+   padding-left:15px;
+   padding-right:15px;
+}
+div#actListweb {display:flex;}
+div#actListmobile {display:none;}
+div.myactionZzim > hr,
+div.myactionReserve > hr {
+    margin-bottom: 0px;
+}
+
+div.mibileActC{
+   padding-left: 10px;
+}
+div.myactionReserve  div.blurblur { box-shadow:none; }
+div.reservLst .col-9{
+   display: grid;
+    align-content: center;
+}
+
+div.myactionReserve > div.zzimtitlerow {
+   padding-left:15px;
+   padding-right:15px;
+   padding-bottom:15px;
+}
+
+/* 예약내역 기간검색창 */
+div.myResvSrch {
+}
+div.search-box-reserve {
+   flex-direction:row;
+   justify-content:end;
+   display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+}
+
+div.myResvSrch input { border:none; width:300px;}
+div.myResvSrch input { text-align:center;}
+div.myResvSrch input:active,
+div.myResvSrch input:focus,
+div.myResvSrch input:hover {
+   outline:none !important;
+   box-shadow:none !important;
+   border:1px solid #Fbbc04 !important;
+}
+
+.search-box-reserve > .col,
+.search-box-reserve > .col-4 {
+    display: flex;
+   justify-content: end;
+}
+.search-box-reserve > .col-4:first-child {
+   justify-content: start;
+}
+
+#myResvDateSearchResetButton,
+#myResvDateSearchButton { 
+   margin-right:10px;
+   background-color:#Fbbc04;
+   color:white;
+   padding: 6px 12px;
+   border-radius:8px;   
+}
+
+#myResvDateSearchResetButton:hover,
+#myResvDateSearchButton:hover, 
+#myResvDateSearchButton:active, 
+#myResvDateSearchResetButton:active, 
+#myResvDateSearchButton:focus 
+#myResvDateSearchResetButton:focus {
+   color:white;
+   font-weight:bold;
+   background-color:#674ea7;
+   box-shadow:none !important;
+}
+/* 마이페이지 메뉴버튼들 */
+div.mobileMy_wrap { 
+    display: grid;
+   align-content: center;
+   justify-content: center;
+    text-align: left;
+   width:180px;
+   height:80px; 
+   border-radius:15px;
+   background-color: #Fbbc04;
+}
+
+
+}
+
+@media screen and (min-width:992px) {
+/* 데스크탑 */
+.structure {
+   width: 768px;
+}
+
+div#actZzimList {
+	width:450px;
+}
+div#actZzimList > div.col:nth-child(2){
+   justify-content:end;
+}
+
+div.mobileMyMenu, div.myactionZzim, div.myactionReserve { width:768px; }
+div.myactionReserve {
+   padding-left:0px;
+   padding-right:0px;
+}
+div.webConMy { max-width:768px; }
+
+.emptyResult {
+    justify-content: center;
+    margin-top: 35px;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+}
+
+@media screen and (min-width:1200px) {
+/* 큰 데스크탑 */
+div.webConMy { max-width:880px; }
+div.mobileMyMenu {display:none;}
+div#menuDiv { display:flex; }
+
+}

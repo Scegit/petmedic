@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+/* 공통(회원, 비회원) 페이지 반응형 */
+div.faqWrap button:active, div.faqWrap button:focus, 
+div.faqWrapdiv a:active, div.faqWrap a:focus,
+div#faqWrap_admin button:active, div#faqWrap_admin button:focus, 
+div#faqWrap_admin a:active, div#faqWrap_admin a:focus,
+div#faqAdminSearch_admin button, div#faqAdminSearch_admin button  { 
+	outline: none !important; box-shadow:none !important; border:none !important;
+}
+
+div#faq_count_admin a:focus, div#faq_count_admin a:active, div#faq_count_admin a:hover,
+div#faqAdminSearch_admin a:focus, div#faqAdminSearch_admin a:active, div#faqAdminSearch_admin a:hover {
+	outline: none !important; box-shadow:none !important; text-decoration:none; 
+}
+
+div.faqWrap input:active, div.faqWrap input:focus,
+div.faqWrap select:active, div.faqWrap select:focus,
+div#faqWrap_admin input:active, div#faqWrap_admin input:focus,
+div#faqWrap_admin select:active, div#faqWrap_admin select:focus,
+div#faqWrap_admin textarea:active, div#faqWrap_admin textarea:focus,
+div#insertWriteFaq textarea:active, div#insertWriteFaq textarea:focus,
+div#updateWriteFaq textarea:active, div#updateWriteFaq textarea:focus,
+div#faqWrap_admin file:focus, div#faqWrap_admin file:active { 
+	outline: none !important; box-shadow:none !important; text-decoration:none; border: 1px solid #eee;
+}
+div#faqSearchDiv button:active, div#faqSearchDiv button:focus,
+div.rowCateBtn div.cate_btn:active, div.rowCateBtn div.cate_btn:hover{ color:white; font-weight:bold; background-color:#fbbc04;}
+div.rowCateBtn_admin div.cate_btn_admin:active, div.rowCateBtn_admin div.cate_btn_admin:hover { 
+	cursor:pointer; font-weight:bold; background-color:#fbbc04;
+}
+
+.faqWrap strong { color:white; font-size:20px;}
+.container.faqHeadWrap { background-color:#674ea7; padding-top: 10px; padding-bottom:10px; border-bottom-left-radius:15px; border-bottom-right-radius:15px; }
+
+/* 검색창 */
+div#faqSearchDiv .input-group.mb-3 { justify-content: center; }
+div#faqSearchDiv select#faqSearch {flex: 0.1 1 auto !important; margin-right: 10px;} 
+#faqSearch, #faqSearchKeyword { flex: 0.6 1 auto ; border-radius:8px; }
+.emptyResult.row {
+    justify-content: center;
+}
+/* faq 개수 들어오는 곳 */
+div#displayCount { text-align: right; margin: 3px 0; }
+
+/* faq 들어오는 곳 */
+div.faqWrap {
+    margin-top: 30px;
+}
+
+div.faq_contents:first-child {
+	box-shadow: 0px -20px 1.5rem rgba(0, 0, 0,.04);
+    border-top-left-radius:8px; 
+    border-top-right-radius:8px;
+/*     box-shadow: 1px -6px 2rem rgba(0, 0, 0,.04); */
+}
+
+/* 0px 20px 2rem rgba(0, 0, 0,.01); */
+
+div.faq_contents:last-child { 
+	border-bottom-left-radius:8px; 
+	border-bottom-right-radius:8px;
+	box-shadow: 2px 16px 1.5rem rgba(0, 0, 0,.04);
+/* 	box-shadow: 0px 10px 1.5rem rgba(0, 0, 0,.04);  */
+}
+
+/* div.faq_contents {color:#666; } */
+/* .faq_contents:first-child { */
+/*     border-top-left-radius:8px;  */
+/*     border-top-right-radius:8px; */
+/*     box-shadow: 1px -6px 2rem rgba(0, 0, 0,.04); */
+/* } */
+
+/* div.faq_contents:last-child { box-shadow: 0px 10px 1.5rem rgba(0, 0, 0,.04); border-bottom-left-radius:8px; border-bottom-right-radius:8px;} */
+div.faq_contents_selected { background-color:#eee; }
+div.faq_cont { background-color:#fff; border-top:1px solid #fbbc04; padding: 25px;}
+div.faq_title { padding:20px 5px 20px 15px; }
+div.faq_title:hover { cursor:pointer; font-weight:bold;}
+div.faqContentsCon { padding-left:0px; padding:right:0px; }
+
+/* 전체목록버튼을 만들것이냐 */
+button.faqallList { margin-bottom:10px; display:none;}
+
+/* 카테고리버튼 */
+div#categoryList {margin-top:10px;} 
+div.rowCateBtn {align-items:center; color:#fff; }
+div.rowCateBtn div.cate_btn { background-color: #674ea7; padding:20px 15px;}
+div.rowCateBtn div.cate_btn:first-child { border-top-left-radius: 8px; border-bottom-left-radius:8px; }
+div.rowCateBtn div.cate_btn:last-child { border-top-right-radius: 8px; border-bottom-right-radius:8px; }
+div.cate_selected { background-color:#fbbc04 !important; font-weight:bold !important; }
+div.rowCateBtn {
+	text-align:center;
+}
+div.rowCateBtn > div.cate_btn:hover {
+	cursor:pointer;
+}
+
+/* 더보기, 처음으로 버튼 */
+div.faq_cnt_row { margin:20px 0; align-items:center; }
+div#faq_count { text-align:center; }
+/* div#faq_count > span > a { color:white; border-radius:5px; padding:10px 20px; background-color:#fbbc04; } */
+/* div#faq_count > span > a:hover { text-decoration:none; font-weight:bold; cursor:pointer;} */
+
+div#faq_count > span > a#next,
+div#faq_count > span > a#entirelist { 
+	color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+div#faq_count > span > a#next {
+	background-color: #fbbc04;
+}
+div#faq_count > span > a#entirelist {
+	background-color:#674ea7;
+}
+
+div#faq_count > span > a:hover { text-decoration:none; font-weight:bold; cursor:pointer;}
+div#faq_count > span > a#next:hover { background-color:#674ea7; }
+div#faq_count > span > a#entirelist:hover { background-color: #fbbc04; }
+
+/* 관리자페이지 css */
+textarea#faq_cont { resize:none; height:300px; }
+div.faqHeadWrap_admin, div#faqAdminSearch_admin, div#faqContents_admin { width:768px;}
+div.faqHeadWrap_admin {
+    display: flex;
+    margin-top:45px;
+    margin-bottom:10px;
+    align-items: center;
+    justify-content: center;
+    padding-right:-15px;
+}
+div#faq_list_wrap_admin div.emptyResult { display:flex; justify-content:center; margin-top:100px;}
+
+.row.faqTitle_admin { justify-content: center; flex-direction: column; }
+div#faq_list_wrap { flex-direction: column;}
+
+div#faqAdminSearch_admin button.searchClick:hover { background-color:#674ea7; cursor:pointer; font-weight:bold;}
+div#faqAdminSearch_admin div.intoWriteFaq {
+    display: flex;
+/*     justify-content: flex-end; */
+}
+div#faqAdminSearch_admin div.intoWriteFaq a {
+	color:white;
+    padding: 6px 12px;
+    background-color: #fbbc04;
+    border-radius: 8px;
+}
+div#faqAdminSearch_admin div.intoWriteFaq a:hover { background-color:#674ea7; cursor:pointer; font-weight:bold;}
+
+/* 검색창 */
+div#faqAdminSearch_admin{ padding-left: 0px; padding-right: 0px; margin-top:20px;}
+div#faqAdminSearch_admin .input-group { justify-content: right; margin-bottom:0px;}
+div#faqAdminSearch_admin .input-group >.custom-select { flex: 0.1 1 auto; }
+div#faqAdminSearch_admin .input-group >#faqSearchKeyword_admin {flex: 0.5 1 auto; margin:0 10px; }
+div#faqAdminSearch_admin .input-group >#faqSearch_admin,
+div#faqAdminSearch_admin .input-group >#faqSearchKeyword_admin { border-radius:8px; }
+
+/* 카테고리 버튼 */
+div#categoryList_admin { justify-content:center; margin:15px 0;} 
+div.rowCateBtn_admin {align-items:center; color:#fff;}
+div.rowCateBtn_admin div.cate_btn_admin { 
+	background-color: #674ea7; 
+	padding:20px 15px;
+	width: 128px;
+	justify-content: center; 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+div.rowCateBtn_admin div.cate_btn_admin:first-child { border-top-left-radius: 8px; border-bottom-left-radius:8px; }
+div.rowCateBtn_admin div.cate_btn_admin:last-child { border-top-right-radius: 8px; border-bottom-right-radius:8px; }
+div.cate_selected { background-color:#fbbc04 !important; font-weight:bold !important; }
+
+div#displayCount_admin { justify-content: end;}
+
+/* faq 들어오는 곳 */
+div.faq_contents_admin { background-color: #eee; color:#666666; }
+div.faq_contents_admin:first-child { border-top-left-radius:8px; border-top-right-radius:8px;}
+div.faq_contents_admin:last-child { border-bottom-left-radius:8px; border-bottom-right-radius:8px;}
+div.faq_contents_admin_selected { background-color:#fbbc04 !important;}
+div.faq_cont_admin { background-color:#fff; border-top:1px solid #fbbc04; border-bottom:1px solid #eee;}
+div.faq_title_admin { padding:20px 5px 20px 15px; }
+div.faq_title_admin:hover { cursor:pointer; font-weight:bold; color:#666;}
+
+/* faq 본문(title말고 content부분임) 확인해라 */
+div.faq_cont_cont { padding:25px; }
+div.faq_cont_admin { flex-direction:column; }
+.modi_del { text-align: right; padding:20px 0; }
+.modi_del > span { padding:6px 12px; color:white; background-color:#fbbc04; border-radius:8px; }
+.modi_del > span:hover { background-color:#674ea7; font-weight:bold; }
+
+/* 자주묻는질문내용 */
+div.faq_cntwrap_admin { justify-content:center; margin-top:10px; }
+div.adminNotCnt { 
+	padding: 0px;
+	width:45px; 
+	height:45px;
+	border-radius: 50%;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+/*     margin-right: 0px; */
+    margin-left: 0px;
+}
+
+div.adminNotCnt a { color:black; }
+div.faqpagingNow { background-color:#dff4f3; font-weight:bold; }
+
+div#faq_count_admin { justify-content:center; margin-left: 0px;}
+/* div#faq_count_admin a { color:white; border-radius:5px; padding:10px 20px; background-color:#fbbc04; } */
+/* div#faq_count_admin a:hover { text-decoration:none; font-weight:bold; } */
+
+/* intert Faq 페이지 */
+div#insertWriteFaq { max-width: 768px; margin-top: 20px; padding-top: 15px; padding-bottom: 15px;}
+div#updateWriteFaq { max-width: 768px; margin-top: 20px; padding-top: 15px; padding-bottom: 15px;}
+div.writeFaqrow { padding:0 15px;}
+div.writeFaqTitle { margin-bottom:10px;}
+div.writeFaqCont { margin-top:10px;}
+/* tr.faq_SubReBtn { text-align:center;} */
+
+div.faq_SubReBtn {
+	margin-top:15px;
+    justify-content: center;
+    align-content: center;
+}
+div.faq_SubReBtn button { margin:0 5px; color:white; border:none; outline:none; background-color:#fbbc04; padding:6px 12px; border-radius:8px; }
+div.faq_SubReBtn button:hover { background-color:#674ea7; font-weight:bold; }
+
+
+
+@media screen and (min-width:576px) {
+/* 스마트폰 가로 */
+
+}
+
+@media screen and (min-width:768px) {
+/* 타블렛 */
+
+}
+
+@media screen and (min-width:992px) {
+/* 데스크탑 */
+div.faqHeadWrap, div.faqContentsCon, div.faqCateSearch { max-width:768px; }
+}
+
+@media screen and (min-width:1200px) {
+/* 큰 데스크탑 */
+/* div.faqHeadWrap, div.faqContentsCon, div.faqCateSearch { max-width:992px; } */
+}
+div#faqWrap_admin {
+    padding-bottom: 30px;
+}

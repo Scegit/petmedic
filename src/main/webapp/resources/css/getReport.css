@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+#reporth1 {
+	border-left: 4px solid #5D3891;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+	margin-left: 30%;
+	padding-top: 10px;
+	margin-bottom: 4%;
+	margin-top: 5%;
+	padding-bottom: 10px;
+}
+
+.form-control:disabled, .form-control[readonly] {
+	background-color: #ffff;
+	opacity: 1;
+}
+
+#reportDetailContainer {
+	padding-bottom: 10%;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+button#allrpbtn1 {
+	background-color: #F99417;
+	border: 0;
+	color: white;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 5px 10px;
+	display: flex;
+	margin-bottom: 8px;
+	margin-top: 15px;
+	margin-left: 45%;
+}
+
+button#allrpbtn1:hover {
+	background-color: #5D3891;
+	border: 0;
+	color: white;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 5px 10px;
+	text-align: left;
+	margin-bottom: 8px;
+	margin-top: 15px;
+	margin-left: 45%;
+}
+
+button#allrpbtn2 {
+	background-color: #F99417;
+	border: 0;
+	color: white;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 5px 10px;
+	display: flex;
+	margin-bottom: 8px;
+	margin-top: 15px;
+}
+
+.innm {
+	width: 412px;
+	height: auto;
+	border: 1px solid #ced4da;
+}
+
+  /* 모달 스타일 */
+.modal-dialog {
+  z-index: 9999;
+}
+
+.rev_pic_text {
+	margin-top: 10px;
+    margin-left: 20px;
+    font-size: 0.9em;
+}
+
+#reportDetailContainer {
+	padding-bottom: 10%;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+button#allrpbtn2:hover {
+	background-color: #5D3891;
+	border: 0;
+	color: white;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 5px 10px;
+	text-align: left;
+	margin-bottom: 8px;
+	margin-top: 15px;
+}
+
+#reportDtail {
+	text-align: center;
+	max-width: 70%;
+	margin-right: 20px;
+}
+
+.input-group-text.reportDtail_span {
+	padding: 0.375rem 1.5rem;
+	width: 155px;
+	font-size: 0.9em;
+	font-weight: 400;
+	line-height: 2.5;
+	color: #ffff;
+	background-color: #878ECD;
+	border: 1px solid #ced4da;
+	border-radius: 0;
+}
+
+.form-control {
+	padding: 0.375rem 0.375rem 0.375rem 1.5rem;
+	width: 50px;
+	height: 50px;
+	font-size: 0.9em;
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #ced4da;
+	border-radius: 0;
+}
+
+/* 230521 소미 수정 */
+#rev_content {
+	height: 150px;
+	resize: none;
+	width: 283px;
+	margin-top: auto;
+}
+
+
+/* 230521 소미 수정 */
+#rev_info {
+	height: 150px;
+	resize: none; /* 크기고정 */
+	margin-top: auto;
+}

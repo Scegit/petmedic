@@ -1,0 +1,329 @@
+@charset "UTF-8";
+
+/*======== 푸터 ========== */
+
+/* 1199px 이하의 장치 크기에 대한 스타일 조정 */
+@media (max-width: 1199px) {
+body,html {
+  height:100%;
+  margin: 0;
+}
+
+
+body{
+display: flex;
+flex-direction: column;
+}
+
+/*컨텐츠 감싸는 디브입니다 ..헤더에 추가 요망 */
+div.footerContainer {
+flex: 1;
+}
+
+footer{
+margin-top:70px;
+bottom: 0;
+border-top:1px solid #5D3891;
+}
+
+
+#footerDiv{
+display:flex;
+flex-direction: column;
+padding:15px;
+bottom: 0;
+}
+
+#footerDiv div{
+margin: 20px 10px;
+}
+
+#footerDiv >div:last-child{
+margin: 0 10px 20px 10px;
+}
+
+
+/*로고 + 문구*/
+#footerDiv >div:first-child{
+display:flex;
+justify-content: center;
+}
+
+#petMedicFooterP{
+display: flex;
+align-items: center;
+}
+
+#petMedicFooterImg{
+display: flex;
+align-items: start;
+}
+
+img#footerLogoImg{
+width:150px;
+}
+
+#petMedicFooterP p{
+font-size: 35px;
+margin: 0;
+font-weight: bold;
+}
+
+
+#petMedicFooterP span:first-child{
+font-size: 55px;
+}
+
+#petMedicFooterP span:last-child{
+font-size:45px;
+}
+
+div.footerLogo{
+padding:0;
+}
+
+div.footerLogo:first-child{
+text-align: right;
+}
+
+
+/*Contact*/
+#footerContact{
+display:flex;
+justify-content: center;
+}
+
+
+p.footerTitle{
+font-size: 2rem;
+border-right: 3px solid #5D3891;
+margin:0;
+padding-right:5%;
+font-weight:400;
+text-align:right;
+}
+
+
+#footerContact >div{
+margin-top:15px;
+}
+
+/*Copyright*/
+#footerCopyright >div{
+display:flex;
+flex-direction: column;
+}
+
+#footerCopyright p{
+margin:10px 0;
+text-align:center;
+}
+
+#footerCopyright span{
+font-weight:bold;
+}
+
+#footerCopyright .CopyTwo{
+font-weight: bold;
+text-align:center;
+}
+
+/*사이트맵 a */
+#footerSiteMap{
+display:block;
+text-align:center;
+}
+
+#footerSiteMap a{
+font-weight: bold;
+color:#666;
+font-size:15pt;
+}
+
+#footerSiteMap a:hover{
+text-decoration:underline;
+}
+
+}/*작은 CSS*/
+
+
+
+
+
+
+
+
+
+
+
+/*1200px 보다 클 때*/
+@media (min-width: 1200px) {
+body,html {
+  height:100%;
+  margin: 0;
+}
+
+
+body{
+display: flex;
+flex-direction: column;
+}
+
+/*컨텐츠 감싸는 디브입니다 ..헤더에 추가 요망 */
+div.footerContainer {
+flex: 1;
+/* position: relative; */
+display: flex;
+flex-direction: column;
+}
+
+footer {
+
+margin-top:70px;
+bottom: 0;
+border-top:1px solid #5D3891;
+}
+
+footer >div{
+display:flex;
+justify-content: space-between;
+/* width: 1400px; */
+width: 100%;
+margin:0 auto;
+height: 250px;
+ 
+}
+
+
+
+/*푸터 안에 들어갈 내용 */
+#footerDiv{
+padding:25px 35px 15px 35px;
+font-size:0.9em;
+}
+
+
+
+
+/*푸터에서 로고+글씨 있는 div 크기 */
+#footerDiv >div:first-child{
+width:350px;
+/* height:150px; */
+display:flex;
+}
+
+/*로고 옆에 있는 펫메딕 글씨 */
+#petMedicFooterP{
+display: flex;
+align-items: start;
+}
+
+#petMedicFooterImg{
+display: flex;
+align-items: start;
+}
+
+img#footerLogoImg{
+width:150px;
+}
+
+#petMedicFooterP p{
+font-size: 35px;
+margin: 0;
+font-weight: bold;
+}
+
+
+#petMedicFooterP span:first-child{
+font-size: 55px;
+}
+
+#petMedicFooterP span:last-child{
+font-size:45px;
+}
+
+div.footerLogo{
+padding:0;
+}
+
+div.footerLogo:first-child{
+text-align: right;
+}
+
+
+/*Contact*/
+#footerContact{
+/* margin-right:130px; */
+width: 290px;
+}
+
+
+p.footerTitle{
+/* display:block; */
+/* font-weight:bold; */
+font-size: 2rem;
+padding-bottom: 5px;
+border-bottom: 3px solid #5D3891;
+margin:0;
+font-weight:400;
+}
+
+
+#footerContact >div{
+margin-top:15px;
+}
+
+#footerAddrDiv{
+/* display: flex; */
+}
+
+/*Copyright Div */
+#footerCopyright{
+display:flex;
+align-items: end;
+width:420px;
+padding-bottom: 25px;
+}
+
+#footerCopyright p{
+margin-bottom:10px;
+}
+
+#footerCopyright span{
+font-weight:bold;
+}
+
+#footerCopyright .CopyTwo{
+font-weight: bold;
+text-align:right;
+}
+
+/*사이트맵 a */
+#footerSiteMap{
+display:block;
+text-align:right;
+margin-bottom: 45px;
+}
+
+#footerSiteMap a{
+font-weight: bold;
+color:#666;
+}
+
+#footerSiteMap a:hover{
+text-decoration:underline;
+}
+
+
+}
+
+
+
+#siteMapATag{/*(※0516)*/
+padding-right: 25px;
+margin-top: 35px;
+text-align:right;
+}
+#adminLoginPageA{/*(※0516)*/
+color: gray;
+}

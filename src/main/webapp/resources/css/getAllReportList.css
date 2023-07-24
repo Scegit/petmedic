@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/*페이징 시작*/
+ul#pagingul {
+   display: inline-flex;
+   text-align: center;
+   border-right: 0;
+   padding-left: 0;
+   padding-top: 20px;
+   border: none;
+}
+
+ul#pagingul>li {
+   text-align: center;
+   float: left;
+   list-style: none;
+   border-radius: 50%;
+}
+
+ul#pagingul>li a {
+   display: block;
+   font-size: 14px;
+   color: black;
+   padding: 9px 12px;
+   box-sizing: border-box;
+   text-decoration-line: none;
+   border: none;
+}
+
+ul#pagingul>li.on {
+   background: #dde7f2;
+}
+
+ul#pagingul>li.on a {
+   color: #000;
+   font-weight: bold;
+}
+/*페이징 끝*/
+
+/* 테이블 스타일 */
+.container {
+	text-align: center;
+	max-width: 70%;
+}
+
+#allcontainer {
+	padding-bottom: 10%;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+.reviewList {
+	font-size: 0.9em;
+}
+
+.reserveList {
+	font-size: 0.9em;
+}
+
+.reviewContents {
+	margin-top: 20px;
+	font-size: 0.9em;
+}
+
+.reserveContents {
+	margin-top: 20px;
+	font-size: 0.9em;
+}
+
+.reportListTable {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.reportListTable th, .reportListTable td {
+	border-bottom: 1px solid #ddd;
+	padding: 6px;
+	text-align: center;
+}
+
+.reportListTable th {
+	background-color: #5D3891;
+	height: 55px;
+	color: #fff;
+}
+
+.reportListTable th:first-child {
+	border-top-left-radius: 20px;
+}
+
+.reportListTable th:last-child {
+	border-top-right-radius: 20px;
+}
+
+.reserveListTable {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.reserveListTable th, .reserveListTable td {
+	border-bottom: 1px solid #ddd;
+	padding: 6px;
+	text-align: center;
+}
+
+.reserveListTable th {
+	background-color: #5D3891;
+	height: 55px;
+	color: #fff;
+}
+
+.reserveListTable th:first-child {
+	border-top-left-radius: 20px;
+}
+
+.reserveListTable th:last-child {
+	border-top-right-radius: 20px;
+}
+
+#searchCondition {
+	width: 10%;
+	margin-left: 40%;
+	margin-bottom: 8px;
+}
+
+#searchKeyword {
+	width: 30%;
+	margin-bottom: 8px;
+}
+
+button#allListbtn {
+	background-color: #F99417;
+	border: 0;
+	color: white;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 5px 10px;
+	display: flex;
+	margin-left: 38px;
+	margin-bottom: 8px;
+}
+
+button#allListbtn:hover {
+	background-color: #5D3891;
+	border: 0;
+	color: white;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 5px 10px;
+	text-align: left;
+	margin-left: 38px;
+	margin-bottom: 8px;
+}
+
+#reserveh1, #reviewh1 {
+	border-left: 4px solid #5D3891;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+	margin-left: 25px;
+	padding-top: 10px;
+	margin-bottom: 8%;
+	margin-top: 5%;
+	padding-bottom: 10px;
+}
+
+row>.allserch {
+	width: 0;
+}
